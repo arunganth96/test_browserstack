@@ -10,6 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: BrowserStackConfig@0
+  inputs:
+    browserstackLocal: true
+- task: BrowserStackResults@1
+  inputs:
+    browserstackProduct: 'automate'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
