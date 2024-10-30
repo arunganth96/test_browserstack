@@ -1,0 +1,112 @@
+<robot generator="Robot 6.1.1 (Python 3.9.5 on win32)" generated="20241021 11:37:39.076" rpa="false" schemaversion="4">
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test-3">Suites.Test-3</stat>
+</suite>
+</statistics>
+<suite name="Suites" id="s0"><suite id="s1-s1" name="Test-3 Windows, 11, Firefox, latest" source="C:\Users\703378934\robot-browserstack\tests\test-3.robot">
+<test id="s1-s1-t1" name="BStack Sample Test 3" line="20">
+<kw name="Execute test" type="SETUP">
+<kw name="Open Session" library="KeywordsFile">
+<arg>${test_caps}</arg>
+<arg>${website_url}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>remote_url=${remote_url}</arg>
+<arg>browser=chrome</arg>
+<arg>desired_capabilities=${capabilities}</arg>
+<arg>url=${test_url}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241021 11:37:39.304" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+<msg timestamp="20241021 11:37:39.304" level="INFO">Opening browser 'chrome' to base url 'https://bstackdemo.com' through remote server at 'http://localhost:4444/wd/hub'.</msg>
+<msg timestamp="20241021 11:37:39.304" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20241021 11:37:39.299" endtime="20241021 11:38:55.038" />
+</kw>
+<status status="PASS" starttime="20241021 11:37:39.299" endtime="20241021 11:38:55.038" />
+</kw>
+<status status="PASS" starttime="20241021 11:37:39.288" endtime="20241021 11:38:55.038" />
+</kw>
+<kw name="Add to Cart" library="TestCases">
+<kw name="Add Implicit Wait" library="KeywordsFile">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20241021 11:38:55.049" endtime="20241021 11:38:55.134" />
+</kw>
+<status status="PASS" starttime="20241021 11:38:55.049" endtime="20241021 11:38:55.134" />
+</kw>
+<kw name="Get the page title" library="KeywordsFile">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" starttime="20241021 11:38:55.148" endtime="20241021 11:38:55.217" />
+</kw>
+<status status="PASS" starttime="20241021 11:38:55.134" endtime="20241021 11:38:55.217" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241021 11:38:58.229" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241021 11:38:55.217" endtime="20241021 11:38:58.231" />
+</kw>
+<kw name="Add first product to cart" library="KeywordsFile">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="1"]/div[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241021 11:38:58.239" level="INFO">Clicking element 'xpath=//*[@id="1"]/div[4]'.</msg>
+<status status="PASS" starttime="20241021 11:38:58.236" endtime="20241021 11:38:58.634" />
+</kw>
+<status status="PASS" starttime="20241021 11:38:58.235" endtime="20241021 11:38:58.634" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241021 11:39:01.648" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20241021 11:38:58.634" endtime="20241021 11:39:01.651" />
+</kw>
+<kw name="Verify product is added to cart" library="KeywordsFile">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_name}</var>
+<arg>xpath=//*[@id="1"]/p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241021 11:39:01.784" level="INFO">${product_name} = iPhone 12</msg>
+<status status="PASS" starttime="20241021 11:39:01.651" endtime="20241021 11:39:01.784" />
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product_incart}</var>
+<arg>css=p.title</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20241021 11:39:01.917" level="INFO">${product_incart} = iPhone 12</msg>
+<status status="PASS" starttime="20241021 11:39:01.784" endtime="20241021 11:39:01.922" />
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css=p.title</arg>
+<arg>${product_name}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20241021 11:39:02.049" level="INFO">Element 'css=p.title' contains text 'iPhone 12'.</msg>
+<status status="PASS" starttime="20241021 11:39:01.922" endtime="20241021 11:39:02.051" />
+</kw>
+<status status="PASS" starttime="20241021 11:39:01.651" endtime="20241021 11:39:02.051" />
+</kw>
+<status status="PASS" starttime="20241021 11:38:55.038" endtime="20241021 11:39:02.051" />
+</kw>
+<kw name="Close Session" library="KeywordsFile" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20241021 11:39:02.060" endtime="20241021 11:39:02.060" />
+</kw>
+<status status="PASS" starttime="20241021 11:39:02.051" endtime="20241021 11:39:02.060" />
+</kw>
+<status status="PASS" starttime="20241021 11:37:39.288" endtime="20241021 11:39:02.066" />
+</test>
+<status status="PASS" starttime="20241021 11:37:39.107" endtime="20241021 11:39:05.050" />
+</suite>
+<status status="PASS" starttime="20241021 11:37:39.107" endtime="20241021 11:39:05.050" />
+</suite><errors>
+<msg timestamp="20241021 11:37:39.304" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+</errors>
+</robot>

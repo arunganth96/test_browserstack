@@ -1,0 +1,24 @@
+
+11:37:18 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+11:37:20 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Test-3                                                                 
+==============================================================================
+BStack Sample Test 3                                                  
+11:37:20 [browserstack_sdk.__init__][INFO] - Completed setup!
+| PASS |
+------------------------------------------------------------------------------
+Suites.Test-3                                                         | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\703378934\robot-browserstack\pabot_results\6\output.xml
+
+11:37:51 [browserstack_sdk.__init__][INFO] - Handling session close
+
+11:37:51 [browserstack_sdk.__init__][INFO] - All done!

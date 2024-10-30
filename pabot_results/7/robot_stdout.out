@@ -1,0 +1,26 @@
+
+11:37:22 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+11:37:24 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Test-3                                                                 
+==============================================================================
+BStack Sample Test 3                                                  
+11:37:24 [browserstack_sdk.__init__][INFO] - Completed setup!
+
+11:37:28 [urllib3.connectionpool][WARNING] - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)'))': /wd/hub/session
+| PASS |
+------------------------------------------------------------------------------
+Suites.Test-3                                                         | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\703378934\robot-browserstack\pabot_results\7\output.xml
+
+11:37:52 [browserstack_sdk.__init__][INFO] - Handling session close
+
+11:37:52 [browserstack_sdk.__init__][INFO] - All done!
